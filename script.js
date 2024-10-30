@@ -64,8 +64,42 @@
 // );
   
 
-const hello1 = () => 'hello JavaScript'
-    console.log(hello1());
+// const hello1 = () => 'hello JavaScript'
+//     console.log(hello1());
      
 
+// const hello2 = (name) => `hello ${name}`;
+// console.log(hello2("Vasyl"));
 
+// const mul = (n, m) => {
+//     let dob = n * m;
+//     let sum = n + m;
+//     let vidn = n - m;
+//     return console.log(dob, sum, vidn);
+// };
+// mul(5,2)
+
+
+// 3) Напиши стрілкову функцію myAverageScore , яка у якості аргументу отримує масив з оцінками, і виводить користувачу його середній результат у наступному форматі:
+// Myaveragescore: A (якщо середня оцінка від 91 до 100)
+// My average score: B (якщо середня оцінка від 81 до 90)
+// My average score: C (якщо середня оцінка від 71 до 80)
+// My average score: D (якщо середня оцінка від 70 і менше)
+// Для перевірки:
+// console.log(myAverageScore([100, 75, 81, 96]));
+// console.log(myAverageScore([45, 63, 85, 70]));
+// console.log(myAverageScore([77, 82, 60, 58]));
+// console.log(myAverageScore([93, 99, 93, 96]));
+
+const myAverageScore = (aray) => {
+    let i = 0;
+    for (const element of aray) {
+        i = i + element;
+    }
+    console.log(i / aray.length);
+};
+
+myAverageScore([100, 75, 81, 96]); 
+myAverageScore([45, 63, 85, 70]);
+myAverageScore([77, 82, 60, 58]);
+myAverageScore([93, 99, 93, 96]);
